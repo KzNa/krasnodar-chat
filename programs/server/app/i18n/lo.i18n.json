@@ -1,0 +1,22 @@
+(function(){var _ = Package.underscore._,
+    package_name = "project",
+    namespace = "project";
+
+if (package_name != "project") {
+    namespace = TAPi18n.packages[package_name].namespace;
+}
+TAPi18n.languages_names["lo"] = ["Lao","ພາສາລາວ"];
+if(_.isUndefined(TAPi18n.translations["lo"])) {
+  TAPi18n.translations["lo"] = {};
+}
+
+if(_.isUndefined(TAPi18n.translations["lo"][namespace])) {
+  TAPi18n.translations["lo"][namespace] = {};
+}
+
+_.extend(TAPi18n.translations["lo"][namespace], {"Channels":"ຊ່ອງ​ທາງ​ການ","edited":"ແກ້​ໄຂ","New_password":"ລະ​ຫັດ​ຜ່ານ​ໃຫມ່","User_left":"ໄດ້​ປະ​ໄວ້​ຊ່ອງ​ທາງ​ການ​."});
+TAPi18n._registerServerTranslator("lo", namespace);
+
+}).call(this);
+
+//# sourceMappingURL=lo.i18n.json.map
